@@ -193,6 +193,11 @@ footer p {
     flex-wrap: wrap;
     padding: 20px;
     justify-content: center;
+    animation-name: rotacion;
+}
+
+@keyframes rotacion {
+    0% {rotate: 20%;}
 }
 
 .perfil {
@@ -205,7 +210,14 @@ footer p {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra sutil */
+    transition: all 0.5s ease;
+}
+
+.perfil:hover {
+    background-color: #FFD1C6;
+    /* background-color: #99c5dd; */
+    transform: perspective(500px) rotateZ(5deg) scale(1.02);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
 }
 
 .perfil img {
