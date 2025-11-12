@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-ES">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,40 @@
     <link rel="stylesheet" href="css/style.css">
     <title>ATI[UCV] 2025-2</title>
 </head>
+
 <body class="body-perfil">
     <header>
         <nav>
             <ul class="cabecera-opciones">
-                <li class="cabecera-opciones-titulo">ATI <span class="ucv-text"> [UCV] </span> 2025-2</li>
-                <li class="cabecera-opciones-saludo">Hola, Brhandon</li>
+                <li class="cabecera-opciones-titulo">Titulo<span class="ucv-text">[UCV]</span>2025</li>
+                <li class="cabecera-opciones-saludo" id="saludo">Hola, Usuario</li>
                 <li class="cabecera-opciones-busqueda">
-                    <input type="search" class="busqueda" placeholder="Nombre...">
-                    <button type="submit">Buscar</button>
+                    <div class="busqueda-contenedor">
+                        <input type="text" class="busqueda" placeholder="Buscar...">
+                        <button class="buscar-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21 21L16.514 16.506L21 21ZM19 10.5C19 15.194 15.194 19 10.5 19C5.806 19 2 15.194 2 10.5C2 5.806 5.806 2 10.5 2C15.194 2 19 5.806 19 10.5Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
                 </li>
             </ul>
         </nav>
     </header>
-    
 
     <main>
         <section>
             <ul class="lista-perfiles">
                 <!-- Perfil 1 -->
                 <li class="perfil">
-                    <img src="30291267/30291267.jpg" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="30291267/30291267Pequeña.jpg">
+                        <img class="mi-perfil" src="30291267/30291267Grande.jpg" alt="Brhandon Palomo">
+                    </picture>
                     <div class="perfil-nombre">Brhandon Palomo</div>
                 </li>
 
@@ -142,11 +156,11 @@
             </ul>
         </section>
     </main>
-    
 
     <footer>
         <p class="parrafo-footer">Copyright © 2025 Escuela de computación - ATI. Todos los derechos reservados</p>
     </footer>
-    
+
 </body>
+
 </html>
