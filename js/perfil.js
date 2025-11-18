@@ -17,7 +17,7 @@ function iniciarPerfil(ciParam, langParam) {
     configScript.src = `conf/config${langParam}.json`;
 
     configScript.onload = function () {
-        console.log('Configuración cargada:', config);
+        // console.log('Configuración cargada:', config);
 
         const script = document.createElement('script');
         script.src = `${ciParam}/perfil.json`;
