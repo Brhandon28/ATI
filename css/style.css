@@ -242,6 +242,14 @@ footer p {
     width: 100%;
 }
 
+#mensaje-no-resultados {
+    text-align: center;
+    color: #b17d75;
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
 /*Tablets*/
 @media (max-width: 768px) {
 
