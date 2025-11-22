@@ -25,7 +25,8 @@ function iniciarPerfil(ciParam, langParam) {
             document.title = perfil.nombre;
             document.getElementById('nombre-titulo').textContent = perfil.nombre;
             const imgElement = document.querySelector('.imagen');
-            imgElement.src = `${ciParam}/${ciParam}.jpg`;
+            // imgElement.src = `${ciParam}/${ciParam}.${`png` || 'jpg' || 'jpeg' || 'PNG' || 'JPG' || 'JPEG'}`;
+            imgElement.src = `${ciParam}/${ciParam}.${`jpg` || `png` || `PNG` || `JPG` || `jpeg` || `JPEG`}`;
             imgElement.alt = perfil.nombre;
             document.querySelector('.parrafo-perfil-descripcion').textContent = perfil.descripcion;
 
