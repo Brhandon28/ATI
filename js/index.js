@@ -17,8 +17,6 @@ function mostrarPerfiles(perfiles, langParam) {
 
     configScript.onload = function () {
 
-        document.title = `${config.sitio[0]} ${config.sitio[1]} ${config.sitio[2]}`;
-
         // Actualizar elementos con las traducciones
         document.querySelector('.cabecera-opciones-titulo').innerHTML = `${config.sitio[0]} <span class="ucv-text">${config.sitio[1]}</span> ${config.sitio[2]}`;
 

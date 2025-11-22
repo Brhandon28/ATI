@@ -74,6 +74,20 @@ a:active {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    /* Fuente principal */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.cabecera-opciones-titulo,
+.cabecera-opciones-saludo {
+    font-family: 'Poppins', sans-serif;
+    /* Fuente para títulos */
 }
 
 header {
@@ -364,7 +378,7 @@ footer p {
     }
 
     .busqueda-contenedor {
-        max-width: 180px;     
+        max-width: 180px;
     }
 
     .busqueda {
