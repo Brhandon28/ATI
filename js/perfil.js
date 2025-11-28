@@ -24,10 +24,23 @@ function iniciarPerfil(ciParam, langParam) {
         script.onload = function () {
             document.title = perfil.nombre;
             document.getElementById('nombre-titulo').textContent = perfil.nombre;
+
+            // ACTUALIZACIÓN: Preload y carga optimizada de imagen
+            const imageBasePath = `${ciParam}/${ciParam}`;
+
+            // Actualizar el preload con la imagen responsive
+            const preloadLink = document.getElementById('lcp-image-preload');
+            preloadLink.href = `${imageBasePath}-400.jpg`;
+
             const imgElement = document.querySelector('.imagen');
-            // imgElement.src = `${ciParam}/${ciParam}.${`png` || 'jpg' || 'jpeg' || 'PNG' || 'JPG' || 'JPEG'}`;
-            imgElement.src = `${ciParam}/${ciParam}.${`jpg` || `png` || `PNG` || `JPG` || `jpeg` || `JPEG`}`;
+            imgElement.src = `${imageBasePath}-400.jpg`;
+            imgElement.srcset = `${imageBasePath}-200.jpg 200w,
+                        ${imageBasePath}-400.jpg 400w,
+                        ${imageBasePath}-800.jpg 800w`;
+            imgElement.sizes = '(max-width: 480px) 90vw, (max-width: 768px) 200px, 200px';
             imgElement.alt = perfil.nombre;
+            imgElement.fetchPriority = 'high'; // ← NUEVO: Prioridad alta
+
             document.querySelector('.parrafo-perfil-descripcion').textContent = perfil.descripcion;
 
             // USAR LAS TRADUCCIONES DE CONFIG
