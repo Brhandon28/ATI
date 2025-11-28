@@ -4,11 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500&family=Raleway:wght@300;400;500&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;500&display=swap"
+		as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="preload" as="image" href="" id="lcp-image-preload">
 	<script src="datos/index.json" defer></script>
 	<script src="js/perfil.js" defer></script>
 	<title></title>
