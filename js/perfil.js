@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const urlParams = new URLSearchParams(window.location.search);
+    const urlParams = new URLSearchParams(this.location.search);
     const ciParam = urlParams.get('ci');
     const langParam = urlParams.get('lang') || 'ES';
     if (ciParam) {
-        iniciarPerfil(ciParam, langParam);
+        iniciarPerfil.call(this, ciParam, langParam);
     }
 });
 
@@ -13,15 +13,18 @@ function iniciarPerfil(ciParam, langParam) {
         return;
     }
 
-    const configScript = document.createElement('script');
+    const configScript = this.createElement('script');
     configScript.src = `conf/config${langParam}.json`;
 
     configScript.onload = function () {
         // console.log('Configuración cargada:', config);
+        console.log('Configuración cargada desde:', this.src);
 
         const script = document.createElement('script');
         script.src = `${ciParam}/perfil.json`;
         script.onload = function () {
+            this.remove(); // Limpiar el script del DOM
+
             document.title = perfil.nombre;
             document.getElementById('nombre-titulo').textContent = perfil.nombre;
 
@@ -56,5 +59,5 @@ function iniciarPerfil(ciParam, langParam) {
         };
         document.head.appendChild(script);
     };
-    document.head.appendChild(configScript);
+    this.head.appendChild(configScript);
 }
