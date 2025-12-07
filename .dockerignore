@@ -1,0 +1,9 @@
+# Excluir estos archivos/directorios de la copia
+Dockerfile
+.dockerignore
+README.md
+.git/
+.gitignore
+*.md
+.env
+*.log
