@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Listado de perfiles de la clase ATI">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500&family=Raleway:wght@300;400;500&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="datos/index.json" defer></script>
-    <script src="js/index.js" defer></script>
-    <title>ATI [UCV] 2025-2</title>
+    <meta name="description" content="SPA - Listado de perfiles de la clase ATI">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/spa.css">
+    <title>ATI [UCV] 2025-2 - SPA</title>
 </head>
-
 <body class="body-perfil">
-    <header>
-        <nav>
-            <ul class="cabecera-opciones">
-                <li class="cabecera-opciones-titulo"><span class="ucv-text"></span></li>
-                <li class="cabecera-opciones-saludo" id="saludo"></li>
-                <li class="cabecera-opciones-busqueda">
-                    <div class="busqueda-contenedor">
-                        <input type="text" class="busqueda" placeholder="">
-                        <button class="buscar-icon" aria-label="Buscar perfil">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M21 21L16.514 16.506L21 21ZM19 10.5C19 15.194 15.194 19 10.5 19C5.806 19 2 15.194 2 10.5C2 5.806 5.806 2 10.5 2C15.194 2 19 5.806 19 10.5Z"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
+   <header>
+    <nav>
+        <ul class="cabecera-opciones">
+            <li class="cabecera-opciones-titulo">
+                <span class="ucv-text" id="titulo-sitio">ATI [UCV] 2025-2</span>
+            </li>
+            <li class="cabecera-opciones-saludo" id="saludo-usuario">Hola</li>
+            <li class="cabecera-opciones-busqueda">
+                <div class="busqueda-contenedor">
+                    <input type="text" class="busqueda" placeholder="Buscar..." id="busqueda-input">
+                    <button class="buscar-icon" aria-label="Buscar perfil" id="btn-buscar">🔍</button>
+                </div>
+            </li>
+            <!-- AÑADIR SELECTOR DE IDIOMA EN EL HEADER -->
+            <li class="cabecera-opciones-idioma">
+                <select id="selector-idioma" style="padding: 5px; margin: 0 10px;">
+                    <option value="ES">🇪🇸 ES</option>
+                    <option value="EN">🇬🇧 EN</option>
+                    <option value="PT">🇵🇹 PT</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+</header>
 
     <main>
-        <section>
-            <ul class="lista-perfiles">
-                <!-- Los perfiles se cargarán dinámicamente con JS -->
-            </ul>
-        </section>
+        <!-- CONTENEDOR SPA - Aquí se carga dinámicamente -->
+        <div id="spa-contenido">
+            <div class="spa-inicial">
+                <h2>SPA de Perfiles Universitarios</h2>
+                <p>Cargando lista de perfiles...</p>
+<div id="spa-contenido">
+    <div class="mensaje-carga">
+        <p>Cargando perfiles...</p>
+    </div>
+</div>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <p class="parrafo-footer"></p>
+        <p class="parrafo-footer" id="texto-footer">Copyright © 2025 Escuela de computación - ATI. Todos los derechos reservados</p>
     </footer>
 
+    <!-- JavaScript para SPA -->
+    <script src="/static/js/spa.js"></script>
+    <!-- Eliminar esta línea: <script type="text/javascript" src="datos/index.json" defer></script> -->
+    <!-- Eliminar esta línea: <script src="js/index.js" defer></script> -->
 </body>
-
 </html>

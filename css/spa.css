@@ -1,0 +1,153 @@
+/* spa.css - Estilos adicionales para SPA */
+
+.spa-inicial {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.spa-inicial h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.controles-spa {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+#btn-cargar-perfiles {
+    padding: 12px 24px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#btn-cargar-perfiles:hover {
+    background: #2980b9;
+}
+
+#selector-idioma {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: white;
+}
+
+/* Estilos para la lista SPA - COPIADOS Y ADAPTADOS DE style.css */
+.lista-perfiles-spa {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.perfil-spa {
+    background-color: #FFEEEB;
+    /* Original: #FFEEEB */
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    width: 140px;
+    /* Original: 140px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    /* Transición original */
+    cursor: pointer;
+    border: none;
+    /* Eliminar borde del estilo anterior */
+}
+
+.perfil-spa:hover {
+    background-color: #FFD1C6;
+    /* Original: #FFD1C6 */
+    transform: perspective(500px) rotateZ(5deg) scale(1.02);
+    /* Efecto 3D original */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.perfil-spa img {
+    width: 120px;
+    height: 165px;
+    /* Original: 165px */
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.perfil-spa h3 {
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    /* Aproximación al tamaño por defecto */
+    font-family: inherit;
+}
+
+/* Detalles del perfil */
+.detalle-perfil {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.detalle-perfil h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #7f8c8d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.btn-volver:hover {
+    background: #636e72;
+}
+
+/* Mensajes de estado */
+.mensaje-carga {
+    text-align: center;
+    padding: 40px;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.mensaje-error {
+    background: #ffeaea;
+    color: #c0392b;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+}

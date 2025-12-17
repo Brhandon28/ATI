@@ -7,3 +7,5 @@ README.md
 *.md
 .env
 *.log
+*.sh
+*.pyc
