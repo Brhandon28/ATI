@@ -21,7 +21,7 @@ function iniciarPerfil(ciParam, langParam) {
         console.log('Configuración cargada desde:', this.src);
 
         const script = document.createElement('script');
-        script.src = `${ciParam}/perfil.json`;
+        script.src = `data_user/${ciParam}/perfil.json`;
         script.onload = function () {
             this.remove(); // Limpiar el script del DOM
 
@@ -29,7 +29,7 @@ function iniciarPerfil(ciParam, langParam) {
             document.getElementById('nombre-titulo').textContent = perfil.nombre;
 
             // ACTUALIZACIÓN: Preload y carga optimizada de imagen
-            const imageBasePath = `${ciParam}/${ciParam}`;
+            const imageBasePath = `data_user/${ciParam}/${ciParam}`;
 
             // Actualizar el preload con la imagen responsive
             const preloadLink = document.getElementById('lcp-image-preload');

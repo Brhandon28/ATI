@@ -41,7 +41,7 @@ const perfiles = [
     },
     {
         "ci": "20117857",
-        "imagen": "20117857\/20117857.PNG",
+        "imagen": "20117857\/20117857.jpg",
         "nombre": "Angel Acosta"
     },
     {
@@ -56,7 +56,7 @@ const perfiles = [
     },
     {
         "ci": "18009154",
-        "imagen": "18009154\/18009154.JPG",
+        "imagen": "18009154\/18009154.jpg",
         "nombre": "Jimmy E. Espino B."
     },
     {
@@ -71,7 +71,7 @@ const perfiles = [
     },
     {
         "ci": "13852255",
-        "imagen": "13852255\/13852255.png",
+        "imagen": "13852255\/13852255.jpg",
         "nombre": "Betty Torres"
     },
     {

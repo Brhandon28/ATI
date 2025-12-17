@@ -49,7 +49,7 @@ function mostrarPerfiles(perfiles, langParam) {
             const img = document.createElement('img');
             img.className = 'img-perfil';
             if (index === 0) img.classList.add('mi-perfil');
-            img.src = perfil.imagen;
+            img.src = `data_user/${perfil.imagen}`;
             img.alt = perfil.nombre;
 
             const divNombre = document.createElement('div');
