@@ -1,0 +1,26 @@
+const perfil = {
+	"nombre": "Brhandon Palomo",
+	"descripcion": "Estudiante de Computación desarrollando sus habilidades en los laboratorios de ATI. Con interés en aplicar los fundamentos de las tecnologías web modernas para crear soluciones interactivas y funcionales, consolidando el conocimiento teórico a través de la práctica.",
+	"color": "Azul",
+	"libro": [
+		"La vuelta al mundo en 80 días",
+		"La llamada de Cthulhu"
+	],
+	"musica": [
+		"De todo un poco"
+	],
+	"video_juego": [
+		"Terraria",
+		"God Of War"
+	],
+	"lenguajes": [
+		"Java",
+		"C",
+		"C++",
+		"Python"
+	],
+	"email": "brhandon28@gmail.com",
+	"ci": "30291267",
+	"genero": "masculino",
+	"fecha_nacimiento": "28/05/2004"
+}
