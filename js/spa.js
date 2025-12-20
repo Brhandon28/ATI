@@ -1,4 +1,3 @@
-// spa.js - VERSIÓN ESTABLE (usa esta exactamente)
 document.addEventListener('DOMContentLoaded', function () {
     console.log('SPA cargada');
 
@@ -9,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const btnBuscar = document.getElementById('btn-buscar');
     const contenidoSpa = document.getElementById('spa-contenido');
 
-    // ✅ CARGAR PERFILES AUTOMÁTICAMENTE (sin botón)
+    // Cargar Perfiles
     cargarPerfiles();
 
     // Configurar selector de idioma
@@ -107,7 +106,7 @@ async function cargarDetallePerfil(ci) {
     }
 }
 
-// Mostrar detalles del perfil (MANTENER LO QUE YA TENÍAS)
+// Mostrar detalles del perfil
 function mostrarDetallePerfil(data) {
     const perfil = data.perfil;
     const config = data.config;
@@ -203,7 +202,7 @@ function mostrarError(mensaje) {
     contenidoSpa.innerHTML = `<div class="mensaje-error">${mensaje}</div>`;
 }
 
-// Funciones para cookies (MANTENER)
+// Funciones para cookies
 function setCookie(nombre, valor, dias) {
     const fecha = new Date();
     fecha.setTime(fecha.getTime() + (dias * 24 * 60 * 60 * 1000));
@@ -226,7 +225,7 @@ function getCookie(nombre) {
     return null;
 }
 
-// ✅ SOLO ESTAS 3 FUNCIONES GLOBALES (las necesarias)
+// Solo tres funciones globales necesarias
 window.cargarPerfiles = cargarPerfiles;
 window.cargarDetallePerfil = cargarDetallePerfil;
 window.mostrarListaPerfiles = mostrarListaPerfiles;
